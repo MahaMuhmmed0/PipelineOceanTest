@@ -30,5 +30,11 @@ pipeline {
       }
     }
 
+    stage('Confirm') {
+      steps {
+        input(message: 'Are you sure ?', ok: 'Yes, I am')
+      }
+    }
+
   }
 }
